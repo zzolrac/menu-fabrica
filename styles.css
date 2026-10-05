@@ -13,9 +13,10 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 148px; }
 body {
   margin: 0;
+  overflow-x: clip;
   background: var(--cream);
   color: var(--ink);
   font-family: "DM Sans", system-ui, sans-serif;
@@ -68,13 +69,16 @@ body {
 .brand-text em { font-style: normal; font-family: "Bebas Neue", sans-serif; font-size: 0.85rem; letter-spacing: 0.42em; }
 .topnav { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 .topnav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   text-decoration: none;
   color: var(--ink);
   font-weight: 700;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   border: 2px solid var(--ink);
   border-radius: 999px;
-  padding: 0.3rem 0.7rem;
+  padding: 0.3rem 0.85rem;
   background: var(--paper);
 }
 .topnav a:hover { background: var(--mustard); }
@@ -250,10 +254,19 @@ footer img { border-radius: 50%; border: 3px solid var(--brown); }
 .tiny { color: #7a6257; font-size: 0.85rem; }
 
 @media (max-width: 860px) {
-  .hero { grid-template-columns: 1fr; }
+  html { scroll-padding-top: 132px; }
+  .hero { grid-template-columns: 1fr; padding-top: 1.4rem; }
   .hero-photo img { aspect-ratio: 4 / 3; }
   .grid { grid-template-columns: 1fr; }
   .wide { grid-template-columns: 1fr; }
-  .wide .photo img { border-right: none; border-bottom: 3px solid var(--ink); height: 300px; }
-  .topbar { flex-direction: column; }
+  .wide .photo img { border-right: none; border-bottom: 3px solid var(--ink); height: 260px; }
+  .photo img { height: 240px; }
+  .topbar { flex-direction: column; gap: 0.5rem; padding: 0.5rem 0.75rem; }
+  .brand img { width: 38px; height: 38px; }
+  .brand-text strong { font-size: 1.05rem; }
+  .brand-text em { font-size: 0.7rem; }
+  .topnav { flex-wrap: nowrap; overflow-x: auto; max-width: 100%; padding-bottom: 0.15rem; -webkit-overflow-scrolling: touch; }
+  .topnav a { flex: 0 0 auto; }
+  .sticker { right: 8px; }
+  .btn { min-height: 48px; display: inline-flex; align-items: center; }
 }
