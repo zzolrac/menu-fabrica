@@ -1,0 +1,11 @@
+node_modules/
+.netlify/
+.git/
+fotos/
+logo/
+scripts/
+package.json
+package-lock.json
+README.md
+.opencode/
+.openchamber/
