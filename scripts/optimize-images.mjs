@@ -15,7 +15,7 @@ const picks = {
   'P1643656.jpg': 'clasica',           // clásica en manos
   'P1643645.jpg': 'aguacatera',        // aguacatera close-up
   'P1643732.jpg': 'tocino',            // mermelada de tocino close-up
-  'P1643717.jpg': 'hawaiana-build',    // piña + cebolla en espátula -> hawaiana
+  'P1643723.jpg': 'hawaiana',           // hawaiana con piña y cebolla caramelizada
   'P1643693.jpg': 'jocho',             // jocho close-up
   'P1643767.jpg': 'alitas',            // alitas con dip
   'P1643675.jpg': 'combo',             // burger + papitas + soda en mesa
