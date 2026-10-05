@@ -1,5 +1,8 @@
 # La Fábrica Burgers — Menú
 
+🌐 **En vivo:** https://menu-fabrica.netlify.app
+💻 **Repo:** https://github.com/zzolrac/menu-fabrica
+
 Sitio estático (sin base de datos). Una sola página con el menú, fotos optimizadas y estilo vintage crema + marrón del logo.
 
 ## Estructura
